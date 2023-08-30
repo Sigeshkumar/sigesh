@@ -1,0 +1,14 @@
+def get_user_choice():
+    while True:
+        choice = input("Enter 'roll' to roll the dice or 'exit' to quit: ")
+        if choice.lower() == 'roll':
+            return 'roll'
+        elif choice.lower() == 'exit':
+            return 'exit'
+        else:
+            print("Invalid input. Please enter 'roll' or 'exit'.")
+user_choice = get_user_choice()
+
+    if user_choice == 'exit':
+        print("Exiting the program.")
+        break
